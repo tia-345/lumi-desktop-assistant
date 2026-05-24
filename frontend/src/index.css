@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  /* Color Palette */
+  --bg-dark: #07080e;
+  --panel-dark: rgba(12, 13, 22, 0.65);
+  --border-glow: rgba(139, 92, 246, 0.25);
+  --border-light: rgba(255, 255, 255, 0.06);
+  
+  --text-primary: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+
+  /* Brand Gradients */
+  --grad-primary: linear-gradient(135deg, #7c83ff 0%, #d98cff 100%);
+  --grad-primary-hover: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  --grad-glow: radial-gradient(circle at top left, rgba(124, 131, 255, 0.15) 0%, rgba(217, 140, 255, 0.05) 50%, transparent 100%);
+  
+  /* Accent HSL for customization */
+  --accent-purple: 265, 89%, 78%;
+  --accent-cyan: 190, 90%, 70%;
+  --accent-green: 142, 70%, 50%;
+  --accent-pink: 330, 85%, 70%;
+  --accent-orange: 24, 95%, 60%;
+  
+  /* Fonts */
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  font-family: var(--font-sans);
+  color-scheme: dark;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--bg-dark);
+  background-image: var(--grad-glow);
+  background-size: cover;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
